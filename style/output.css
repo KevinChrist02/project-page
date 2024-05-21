@@ -6,8 +6,10 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #E9EAEC;
+  color: #e9eaec;
   font-family: "Nippo", sans-serif;
+  /* vh is perfect for responsible website instead 
+   of using a fixed value */
 }
 .main h1 {
   margin: 20vh auto 0;
