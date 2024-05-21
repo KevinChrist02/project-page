@@ -37,5 +37,8 @@ body {
   font-weight: 400;
   color: #333652;
 }
+.about-me img {
+  max-width: 40vh;
+}
 
 /*# sourceMappingURL=output.css.map */
