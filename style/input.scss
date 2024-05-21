@@ -4,7 +4,7 @@ html {
   font-family: $font;
 }
 
-body{
+body {
   // body margin should be 0 so that the containers can fully stretch
   margin: 0 auto;
 }
@@ -16,9 +16,8 @@ body{
   align-items: center;
   padding-bottom: 20vh;
 
-  background-color:#333652;
+  background-color: #333652;
   color: #e9eaec;
-
 
   /* vh is perfect for responsible website instead 
    of using a fixed value */
@@ -34,16 +33,42 @@ body{
   }
 }
 
-.about-me{
-  background-color: #FAD02C;
+.about-me {
+  background-color: #fad02c;
   padding-top: 10vh;
-  h2{
+  padding-bottom: 20vh;
+
+  h2 {
     font-size: 10vh;
     text-align: center;
     font-weight: 400;
     color: #333652;
   }
-  img{
-    max-width: 40vh;
+  //using grid to adjust the position of my elements
+  //grid gives me here more freedom than flexbox
+  .about-grid {
+    display: grid;
+    grid-template: repeat(2, 50%);
+    align-items: center;
+    justify-content: center;
+    margin: 0 10vh;
+    gap: 8vh;
+
+    p {
+      grid-area: 1 / 1 / 0 / span 2;
+      color: #333652;
+      font-size: 1.4vw;
+    }
+    .image1 {
+      max-width: 20vw;
+      grid-area: 1 / 2 / span 2;
+    }
+    .image2 {
+      max-width: 40vw;
+      grid-area: 2 / 1 / span 2 / span 2;
+    }
+    img {
+      border-radius: 12px;
+    }
   }
 }

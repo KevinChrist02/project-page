@@ -28,8 +28,9 @@ body {
 }
 
 .about-me {
-  background-color: #FAD02C;
+  background-color: #fad02c;
   padding-top: 10vh;
+  padding-bottom: 20vh;
 }
 .about-me h2 {
   font-size: 10vh;
@@ -37,8 +38,29 @@ body {
   font-weight: 400;
   color: #333652;
 }
-.about-me img {
-  max-width: 40vh;
+.about-me .about-grid {
+  display: grid;
+  grid-template: repeat(2, 50%);
+  align-items: center;
+  justify-content: center;
+  margin: 0 10vh;
+  gap: 8vh;
+}
+.about-me .about-grid p {
+  grid-area: 1/1/0/span 2;
+  color: #333652;
+  font-size: 1.4vw;
+}
+.about-me .about-grid .image1 {
+  max-width: 20vw;
+  grid-area: 1/2/span 2;
+}
+.about-me .about-grid .image2 {
+  max-width: 40vw;
+  grid-area: 2/1/span 2/span 2;
+}
+.about-me .about-grid img {
+  border-radius: 12px;
 }
 
 /*# sourceMappingURL=output.css.map */
