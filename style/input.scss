@@ -1,7 +1,12 @@
 $font: "Nippo", sans-serif;
 
 html {
-  background-color: #333652;
+  font-family: $font;
+}
+
+body{
+  // body margin should be 0 so that the containers can fully stretch
+  margin: 0 auto;
 }
 
 .main {
@@ -9,9 +14,11 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 20vh;
 
+  background-color:#333652;
   color: #e9eaec;
-  font-family: $font;
+
 
   /* vh is perfect for responsible website instead 
    of using a fixed value */
@@ -24,5 +31,16 @@ html {
     margin: 0 auto;
     font-weight: 400;
     font-size: 10vh;
+  }
+}
+
+.about-me{
+  background-color: #FAD02C;
+  padding-top: 10vh;
+  h2{
+    font-size: 10vh;
+    text-align: center;
+    font-weight: 400;
+    color: #333652;
   }
 }

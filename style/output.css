@@ -1,13 +1,18 @@
 html {
-  background-color: #333652;
+  font-family: "Nippo", sans-serif;
+}
+
+body {
+  margin: 0 auto;
 }
 
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 20vh;
+  background-color: #333652;
   color: #e9eaec;
-  font-family: "Nippo", sans-serif;
   /* vh is perfect for responsible website instead 
    of using a fixed value */
 }
@@ -20,6 +25,17 @@ html {
   margin: 0 auto;
   font-weight: 400;
   font-size: 10vh;
+}
+
+.about-me {
+  background-color: #FAD02C;
+  padding-top: 10vh;
+}
+.about-me h2 {
+  font-size: 10vh;
+  text-align: center;
+  font-weight: 400;
+  color: #333652;
 }
 
 /*# sourceMappingURL=output.css.map */
