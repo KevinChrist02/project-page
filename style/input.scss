@@ -1,0 +1,25 @@
+$font: "Nippo", sans-serif;
+
+html{
+  background-color: #333652;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  color: #E9EAEC;
+  font-family: $font;
+
+  h1{
+    margin: 20vh auto 0;
+    font-weight: 500;
+    font-size: 20vh;
+  }
+  h2{
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 10vh;
+  }
+}
