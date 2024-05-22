@@ -74,5 +74,22 @@ body {
   text-align: center;
   color: #333652;
 }
+.projects .project-images {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 10vh;
+  gap: 8vh;
+}
+.projects .project-images .image3 {
+  max-width: 100%;
+  max-height: 50vh;
+}
+.projects .project-images .image4 {
+  max-width: 50vh;
+  max-height: 50vh;
+}
+.projects .project-images img {
+  border-radius: 12px;
+}
 
 /*# sourceMappingURL=output.css.map */
