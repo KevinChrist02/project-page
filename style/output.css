@@ -92,4 +92,27 @@ body {
   border-radius: 12px;
 }
 
+.tech-stack {
+  background-color: #E9EAEC;
+  padding-top: 10vh;
+  padding-bottom: 20vh;
+}
+.tech-stack h2 {
+  color: #333652;
+  font-weight: 400;
+  font-size: 10vh;
+  text-align: center;
+}
+.tech-stack h3 {
+  color: #333652;
+  font-weight: 300;
+  font-size: 4vh;
+}
+.tech-stack .stack {
+  margin-left: 10vh;
+}
+.tech-stack .stack img {
+  max-width: 7vh;
+}
+
 /*# sourceMappingURL=output.css.map */
