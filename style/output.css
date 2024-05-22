@@ -63,4 +63,16 @@ body {
   border-radius: 12px;
 }
 
+.projects {
+  background-color: #90adc6;
+  padding-top: 10vh;
+  padding-bottom: 20vh;
+}
+.projects h2 {
+  font-weight: 400;
+  font-size: 10vh;
+  text-align: center;
+  color: #333652;
+}
+
 /*# sourceMappingURL=output.css.map */
