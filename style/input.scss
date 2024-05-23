@@ -2,16 +2,16 @@ $font: "Nippo", sans-serif;
 $space: 8vh;
 
 // animation for the heading
-@keyframes slideIn{
-  from{
+@keyframes slideIn {
+  from {
     transform: translateX(-300px);
   }
-  to{
+  to {
     transform: translateX(0);
   }
 }
 // utility class to use
-.slideIn{
+.slideIn {
   animation: slideIn 1s ease-in;
 }
 
@@ -23,6 +23,10 @@ html {
 body {
   // body margin should be 0 so that the containers can fully stretch
   margin: 0 auto;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .navbar {
@@ -60,7 +64,7 @@ body {
     font-size: 20vh;
     transition: all 0.3;
   }
-  h1:hover{
+  h1:hover {
     transform: translateY(-10px);
     color: #fad02c;
   }
@@ -70,7 +74,7 @@ body {
     font-size: 10vh;
     transition: all 0.3 ease-in-out;
   }
-  h2:hover{
+  h2:hover {
     transform: translateY(-10px);
     color: #90adc6;
   }
@@ -171,6 +175,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: $space;
+    margin: 0 10vh;
     img {
       max-width: 7vh;
       padding: 1.4vh;
@@ -191,4 +196,19 @@ body {
       grid-area: 2 / 2;
     }
   }
+}
+
+.top-link{
+  a{
+    text-decoration: none;
+  }
+  .svg{
+    width: $space;
+    height: $space;
+    color: #2a9d8f;
+  }
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }

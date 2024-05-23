@@ -19,6 +19,10 @@ body {
   margin: 0 auto;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -153,6 +157,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 8vh;
+  margin: 0 10vh;
 }
 .tech-stack .stack img {
   max-width: 7vh;
@@ -172,6 +177,20 @@ body {
 }
 .tech-stack .stack .other {
   grid-area: 2/2;
+}
+
+.top-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.top-link a {
+  text-decoration: none;
+}
+.top-link .svg {
+  width: 8vh;
+  height: 8vh;
+  color: #2a9d8f;
 }
 
 /*# sourceMappingURL=output.css.map */
