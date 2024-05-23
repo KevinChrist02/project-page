@@ -1,3 +1,15 @@
+@keyframes slideIn {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.slideIn {
+  animation: slideIn 1s ease-in;
+}
+
 html {
   font-family: "Nippo", sans-serif;
   scroll-behavior: smooth;
@@ -38,11 +50,21 @@ body {
   margin: 20vh auto 0;
   font-weight: 500;
   font-size: 20vh;
+  transition: all 0.3;
+}
+.main h1:hover {
+  transform: translateY(-10px);
+  color: #fad02c;
 }
 .main h2 {
   margin: 0 auto;
   font-weight: 400;
   font-size: 10vh;
+  transition: all 0.3 ease-in-out;
+}
+.main h2:hover {
+  transform: translateY(-10px);
+  color: #90adc6;
 }
 
 .about-me {
