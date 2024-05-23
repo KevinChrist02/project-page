@@ -23,8 +23,13 @@ html {
 body {
   // body margin should be 0 so that the containers can fully stretch
   margin: 0 auto;
+  //custom cursor with image
+  cursor: url(../assets/icons8-circle-32.png), auto;
 }
 
+a{
+  cursor: url(../assets/icons8-circle-32-pointer.png), auto;
+}
 body::-webkit-scrollbar {
   display: none;
 }

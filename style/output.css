@@ -17,6 +17,11 @@ html {
 
 body {
   margin: 0 auto;
+  cursor: url(../assets/icons8-circle-32.png), auto;
+}
+
+a {
+  cursor: url(../assets/icons8-circle-32-pointer.png), auto;
 }
 
 body::-webkit-scrollbar {
