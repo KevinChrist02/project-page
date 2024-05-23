@@ -1,9 +1,27 @@
 html {
   font-family: "Nippo", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #333652;
+  padding-top: 8vh;
+  font-size: 2.4vh;
+}
+.navbar a {
+  color: #e9eaec;
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: #fad02c;
 }
 
 .main {
@@ -93,7 +111,7 @@ body {
 }
 
 .tech-stack {
-  background-color: #E9EAEC;
+  background-color: #e9eaec;
   padding-top: 10vh;
   padding-bottom: 20vh;
 }
