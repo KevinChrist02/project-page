@@ -111,6 +111,13 @@ body::-webkit-scrollbar {
 .about-me .about-grid img {
   border-radius: 12px;
 }
+.about-me .about-grid a {
+  color: #90adc6;
+  text-decoration: none;
+}
+.about-me .about-grid a:hover {
+  color: #e9eaec;
+}
 
 .projects {
   background-color: #90adc6;

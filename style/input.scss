@@ -122,6 +122,13 @@ body::-webkit-scrollbar {
     img {
       border-radius: 12px;
     }
+    a{
+      color: #90adc6;
+      text-decoration: none;
+    }
+    a:hover{
+      color:#e9eaec;
+    }
   }
 }
 .projects {
