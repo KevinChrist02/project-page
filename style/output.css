@@ -48,6 +48,7 @@ body::-webkit-scrollbar {
 .main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding-bottom: 20vh;
   background-color: #333652;
@@ -137,7 +138,7 @@ body::-webkit-scrollbar {
   gap: 8vh;
 }
 .projects .project-images .image3 {
-  max-width: 100%;
+  max-width: 50vh;
   max-height: 50vh;
 }
 .projects .project-images .image4 {
@@ -203,6 +204,32 @@ body::-webkit-scrollbar {
   width: 8vh;
   height: 8vh;
   color: #2a9d8f;
+}
+
+@media (max-width: 770px) {
+  .main h1,
+  .main h2 {
+    text-align: center;
+  }
+  .project-images {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 550px) {
+  .about-me .about-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-me .about-grid p {
+    font-size: 1.6vh;
+  }
+  .tech-stack .stack {
+    margin: 10vw;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */

@@ -27,7 +27,7 @@ body {
   cursor: url(../assets/icons8-circle-32.png), auto;
 }
 
-a{
+a {
   cursor: url(../assets/icons8-circle-32-pointer.png), auto;
 }
 body::-webkit-scrollbar {
@@ -55,6 +55,7 @@ body::-webkit-scrollbar {
   // using flexbox to center the headings
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding-bottom: 20vh;
 
@@ -122,12 +123,12 @@ body::-webkit-scrollbar {
     img {
       border-radius: 12px;
     }
-    a{
+    a {
       color: #90adc6;
       text-decoration: none;
     }
-    a:hover{
-      color:#e9eaec;
+    a:hover {
+      color: #e9eaec;
     }
   }
 }
@@ -150,7 +151,7 @@ body::-webkit-scrollbar {
     gap: $space;
 
     .image3 {
-      max-width: 100%;
+      max-width: 50vh;
       max-height: 50vh;
     }
 
@@ -210,11 +211,11 @@ body::-webkit-scrollbar {
   }
 }
 
-.top-link{
-  a{
+.top-link {
+  a {
     text-decoration: none;
   }
-  .svg{
+  .svg {
     width: $space;
     height: $space;
     color: #2a9d8f;
@@ -223,4 +224,38 @@ body::-webkit-scrollbar {
   position: fixed;
   bottom: 20px;
   right: 20px;
+}
+
+@media (max-width: 770px) {
+  .main {
+    h1,
+    h2 {
+      text-align: center;
+    }
+  }
+  .project-images {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .about-me {
+    .about-grid {
+      display: flex;
+      flex-direction: column;
+      p {
+        font-size: 1.6vh;
+      }
+    }
+  }
+
+  .tech-stack {
+    .stack {
+      margin: 10vw;
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
